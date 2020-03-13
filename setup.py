@@ -4,14 +4,15 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="admcleod", # Replace with your own username
-    version="0.0.1",
-    author="Austin McLeod",
+    name="pynomial",
+    version="0.1",
+    author="Silver Creek",
     author_email="austin.mcleod@silvercreeksoftware.com",
     description="pynomial",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Silver-Creek/pynomial.git",
+    download_url="",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
