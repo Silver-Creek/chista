@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-
+GLobal package configuration to improve consistency 
 '''
 
 from __future__ import absolute_import, division, print_function
@@ -187,7 +187,13 @@ default_config_description ={
 	,'ETL.DefaultTimeZone': ('The default time zone that is used for Extract, Transform and Load operations')
 }
 
+# Plotstyles
+#----------------------------------------------------------------------------------------------------------
+import matplotlib as mpl
 
+
+# Classes
+#-------------------------------------------------------------------------------------------
 class Configurations(MutableMapping, dict):
 	'''
 	A dictionary object to define an maintain the default/user configurations. This helps to minimize repetition of parameters
