@@ -36,6 +36,18 @@ class SPCredential(ClientSecretCredential):
             tenant_id (str) – ID of the service principal’s tenant. Also called its ‘directory’ ID.
             client_id (str) – the service principal’s client ID
             client_secret (str) – one of the service principal’s client secrets
+
+        Examples:
+
+        .. code-block:: python
+            
+            import pynomial as pyn
+
+            credential = pyn.SPCredential()
+
+            >>> Client ID was retrieved from AZURE_CLIENT_ID environmental variable
+            >>> Tenant ID was retrieved from AZURE_Tenant_ID environmental variable
+            >>> Client secret was retrieved from AZURE_CLIENT_SECRET environmental variable
             
         '''
         
