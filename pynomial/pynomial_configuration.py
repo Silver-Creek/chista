@@ -4,14 +4,14 @@
 '''
 GLobal package configuration to improve consistency 
 '''
+#-----------------------------------------------------------------------------
+# Boilerplate
+#-----------------------------------------------------------------------------
+from __future__ import absolute_import, division, print_function, unicode_literals
 
-from __future__ import absolute_import, division, print_function
-
-__author__ = 'Mostafa Hadavand'
-__date__ = '2020-03-16'
-__version__ = '1.0.0'
-
-
+#-----------------------------------------------------------------------------
+# Imports
+#-----------------------------------------------------------------------------
 import six
 import os
 from collections import MutableMapping
@@ -179,12 +179,20 @@ default_configs = {
 	'config.verbose': [True, _validate_bool]
 	,'config.autoload': [True, _validate_bool]
 	,'ETL.DefaultTimeZone': ['Canada/Mountain', _validate_string]
+	,'Azure.SP.client_id': [None, _validate_string]
+	,'Azure.SP.tenant_id': [None, _validate_string]
+	,'Azure.SP.client_secret': [None, _validate_string]
+	,'Azure.login.user_name': [None, _validate_string]
 }
 
 default_config_description ={
 	'config.verbose': ('Option to have verbose description when the default configurations are loaded')
 	,'config.autoload': ('Option to control if the configurations are auto loaded from the system defaults file')
 	,'ETL.DefaultTimeZone': ('The default time zone that is used for Extract, Transform and Load operations')
+	,'Azure.SP.client_id': ('Default Azure service principal client id')
+	,'Azure.SP.tenant_id': ('Default Azure tenant id')
+	,'Azure.SP.client_secret': ('Secret for the default service principal')
+	,'Azure.login.user_name': ('Default user name for Azure credentials')
 }
 
 # Plotstyles

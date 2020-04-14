@@ -1,3 +1,7 @@
 six
 collections
 pprint
+azure == 4.0.0
+azure-keyvault
+azure-keyvault-secrets
+azure-identity

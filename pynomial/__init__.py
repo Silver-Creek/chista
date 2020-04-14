@@ -12,3 +12,4 @@ __version__ = '1.0.0'
 # parameter configurations
 from . pynomial_configuration import Configurations
 from .data_source import *
+from .azure import *
