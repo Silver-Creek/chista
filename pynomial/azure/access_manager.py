@@ -58,7 +58,7 @@ class SPCredential(ClientSecretCredential):
                 
                 if os.getenv('AZURE_CLIENT_ID') is None:
                     
-                    client_id = getpass.getpass('Client ID: ')
+                    client_id = getpass('Client ID: ')
                     
                 else:
                     print('Client ID was retrieved from AZURE_CLIENT_ID environmental variable')
@@ -80,13 +80,13 @@ class SPCredential(ClientSecretCredential):
                 
                 if os.getenv('AZURE_TENANT_ID') is None:
                     
-                    tenant_id = getpass.getpass('Tenant ID: ')
+                    tenant_id = getpass('Tenant ID: ')
                     
                 else:
                     print('Tenant ID was retrieved from AZURE_Tenant_ID environmental variable')
                     tenant_id = os.getenv('AZURE_TENANT_ID')
             else:
-                tenant_id = Configurations['Azure.SP.tenant_id']
+                tenant_id = Configurations['Azure.SP.TENANT_ID']
                 
         
         if tenant_id is None:
@@ -102,7 +102,7 @@ class SPCredential(ClientSecretCredential):
                 
                 if os.getenv('AZURE_CLIENT_SECRET') is None:
                     
-                    client_secret = getpass.getpass('Client secret: ')
+                    client_secret = getpass('Client secret: ')
                     
                 else:
                     print('Client secret was retrieved from AZURE_CLIENT_SECRET environmental variable')

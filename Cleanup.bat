@@ -2,6 +2,8 @@
 
 ECHO Clean up In Progree...
 
+@RD /S /Q "dist"
+
 @RD /S /Q "pynomial.egg-info"
 
 @RD /S /Q ".vscode"

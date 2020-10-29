@@ -11,7 +11,7 @@ install_requires = [x.strip() for x in install_requires]
 
 setuptools.setup(
     name="pynomial",
-    version="1.0.1",
+    version="1.0.4",
     author="Silver Creek",
     author_email="austin.mcleod@silvercreeksoftware.com",
     description="pynomial",

@@ -2,10 +2,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import, division, print_function
-__author__ = 'Mostafa Hadavand'
-__date__ = '2020-03-25'
-__version__ = '1.0.0'
+#-----------------------------------------------------------------------------
+# Boilerplate
+#-----------------------------------------------------------------------------
+from __future__ import absolute_import, division, print_function, unicode_literals
+
+#-----------------------------------------------------------------------------
+# Imports
+#-----------------------------------------------------------------------------
+
 
 
 class Connection(object):
